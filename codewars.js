@@ -237,6 +237,16 @@ function getAge(inputString) {
   return Array.from(inputString).reduce((a) => parseInt(a));
 }
 */
+// Difference of Volumes of Cuboids
 
+function findDifference(a, b) {
+  a = a.reduce((p, c) => {
+    return p * c;
+  });
+  b = b.reduce((p, c) => {
+    return c * p;
+  });
+  return a > b ? a - b : b - a;
+}
 
-  
+console.log(findDifference([3, 2, 5], [1, 4, 4]));
