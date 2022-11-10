@@ -238,7 +238,7 @@ function getAge(inputString) {
 }
 */
 // Difference of Volumes of Cuboids
-
+/*
 function findDifference(a, b) {
   a = a.reduce((p, c) => {
     return p * c;
@@ -250,3 +250,20 @@ function findDifference(a, b) {
 }
 
 console.log(findDifference([3, 2, 5], [1, 4, 4]));
+*/
+// Calculate BMI
+/*
+function bmi(weight, height) {
+  if (weight / (height * height) <= 18.5) {
+    return "Underweight";
+  } else if (weight / (height * height) <= 25) {
+    return "Normal";
+  } else if (weight / (height * height) <= 30) {
+    return "Overweight";
+  } else if (weight / (height * height) > 30) {
+    return "Obese";
+  }
+}
+
+console.log(bmi(80, 1.8));
+*/
