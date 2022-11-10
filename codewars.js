@@ -231,3 +231,12 @@ console.log(
   disemvowel("No offense but,\nYour writing is among the worst I've ever read")
 );
 */
+// Parse nice int from char problem
+/*
+function getAge(inputString) {
+  return Array.from(inputString).reduce((a) => parseInt(a));
+}
+*/
+
+
+  
