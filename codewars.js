@@ -267,3 +267,14 @@ function bmi(weight, height) {
 
 console.log(bmi(80, 1.8));
 */
+//Is it even?
+function testEven(n) {
+  if ((n % 2 < 1 && n <= Math.floor(n)) || n == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(testEven(0));
+
+
