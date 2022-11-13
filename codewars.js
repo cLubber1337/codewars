@@ -379,7 +379,7 @@ var humanYearsCatYearsDogYears = function (humanYears) {
 console.log(humanYearsCatYearsDogYears(5)); // [2,24,24]
 */
 //Student's Final Grade
-
+/*
 function finalGrade(exam, projects) {
   if (exam > 90 || projects > 10) {
     return 100;
@@ -393,5 +393,11 @@ function finalGrade(exam, projects) {
 }
 
 console.log(finalGrade(79, 5)); // 90
+*/
+// Twice as old
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  const howManyyearsAgo = dadYearsOld - sonYearsOld * 2;
+  return howManyyearsAgo == 0 ? 0 : Math.abs(dadYearsOld - sonYearsOld * 2);
+}
 
-
+console.log(twiceAsOld(55, 30)); // 22
