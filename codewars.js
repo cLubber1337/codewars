@@ -334,7 +334,7 @@ console.log(rps("paper", "paper"));
 */
 
 //Remove String Spaces
-
+/*
 function noSpace(x) {
   return x
     .split("")
@@ -343,5 +343,36 @@ function noSpace(x) {
     .trim();
 }
 console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl  B")); // 8j8mBliB8gimjB8B8jlB
+*/
 
+//Cat years, Dog years
+var humanYearsCatYearsDogYears = function (humanYears) {
+  let respectiveAges = [humanYears];
+  if (humanYears == 1) {
+    for (let i = 0; i <= 1; i++) {
+      respectiveAges.push(15);
+    }
+    return respectiveAges;
+  } else if (humanYears == 2) {
+    for (let i = 0; i <= 1; i++) {
+      respectiveAges.push(24);
+    }
+  } else if (humanYears == 3) {
+    for (let i = 0; i <= 1; i++) {
+      respectiveAges[1] = 28;
+      respectiveAges[2] = 29;
+    }
+  } else if (humanYears >= 4) {
+    respectiveAges[1] = 28;
+    respectiveAges[2] = 29;
+    let cat = 4;
+    let dog = 5;
+    for (let i = 0; i < humanYears - 3; i++) {
+      respectiveAges[1] += cat;
+      respectiveAges[2] += dog;
+    }
+  }
+  return respectiveAges;
+};
 
+console.log(humanYearsCatYearsDogYears(5)); // [2,24,24]
