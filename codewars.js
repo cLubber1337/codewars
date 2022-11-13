@@ -298,7 +298,7 @@ console.log(
   ])
 ); // ["Open", "Senior", "Open", "Senior"]  // 55 , 7
 */
-//Opposites Attract 
+//Opposites Attract
 /*
 function lovefunc(flower1, flower2) {
   if (
@@ -313,3 +313,23 @@ function lovefunc(flower1, flower2) {
 
 console.log(lovefunc(2, 2));
 */
+//Rock Paper Scissors!
+/*
+const rps = (p1, p2) => {
+  if (p1 === p2) {
+    return "Draw!";
+  } else if (
+    (p1 === "rock" && p2 === "scissors") ||
+    (p1 === "scissors" && p2 === "paper") ||
+    (p1 === "paper" && p2 === "rock")
+  ) {
+    return "Player 1 won!";
+  } else {
+    return "Player 2 won!";
+  }
+};
+
+console.log(rps("scissors", "rock"));
+console.log(rps("paper", "paper"));
+*/
+
