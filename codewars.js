@@ -395,9 +395,29 @@ function finalGrade(exam, projects) {
 console.log(finalGrade(79, 5)); // 90
 */
 // Twice as old
+/*
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   const howManyyearsAgo = dadYearsOld - sonYearsOld * 2;
   return howManyyearsAgo == 0 ? 0 : Math.abs(dadYearsOld - sonYearsOld * 2);
 }
 
 console.log(twiceAsOld(55, 30)); // 22
+*/
+// Who likes it?
+/*
+function likes(names) {
+  const [who, who1, who2] = names;
+  if (names.length == 2) {
+    return `${who} and ${who1} like this`;
+  } else if (names.length == 1) {
+    return `${who} likes this`;
+  } else if (names.length == 0) {
+    return "no one likes this";
+  } else if (names.length == 3) {
+    return `${who}, ${who1} and ${who2} like this`;
+  } else if (names.length >= 4) {
+    return `${who}, ${who1} and ${names.length - 2} others like this`;
+  }
+}
+console.log(likes(["Max", "John", "Mark", "Dima", "Soska"]));  
+*/
