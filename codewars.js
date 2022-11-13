@@ -268,13 +268,48 @@ function bmi(weight, height) {
 console.log(bmi(80, 1.8));
 */
 //Is it even?
+/*
 function testEven(n) {
-  if ((n % 2 < 1 && n <= Math.floor(n)) || n == 0) {
+  if ((n % 2 < 1 && n < Math.floor(n)) || n == 0) {
     return true;
   } else {
     return false;
   }
 }
-console.log(testEven(0));
+console.log(testEven(0.5));
+*/
+//Categorize New Member
+/*
+function openOrSenior(data) {
+  return data.map((item) => {
+    if (item[0] >= 55 && item[1] > 7) {
+      return "Senior";
+    } else {
+      return "Open";
+    }
+  });
+}
+console.log(
+  openOrSenior([
+    [45, 12],
+    [55, 21],
+    [19, -2],
+    [104, 20],
+  ])
+); // ["Open", "Senior", "Open", "Senior"]  // 55 , 7
+*/
+//Opposites Attract 
+/*
+function lovefunc(flower1, flower2) {
+  if (
+    (flower1 % 2 === 0 && flower2 % 2 !== 0) ||
+    (flower1 % 2 !== 0 && flower2 % 2 === 0)
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
-
+console.log(lovefunc(2, 2));
+*/
