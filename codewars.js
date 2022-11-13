@@ -421,14 +421,3 @@ function likes(names) {
 }
 console.log(likes(["Max", "John", "Mark", "Dima", "Soska"]));  
 */
-//Unique In Order
-var uniqueInOrder = function (iterable) {
-  let newIterable = [];
-  for (let i = 0; i < iterable.length; i++) {
-    if (iterable[i] != iterable[i + 1]) {
-      newIterable.push(iterable[i]);
-    }
-  }
-  return newIterable;
-};
-console.log(uniqueInOrder("AAAABBBCCDAABBB")); // ["A", "B", "C", "D", "A", "B"]
