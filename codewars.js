@@ -346,6 +346,7 @@ console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl  B")); // 8j8mBliB8gimjB8B8jlB
 */
 
 //Cat years, Dog years
+/*
 var humanYearsCatYearsDogYears = function (humanYears) {
   let respectiveAges = [humanYears];
   if (humanYears == 1) {
@@ -376,3 +377,21 @@ var humanYearsCatYearsDogYears = function (humanYears) {
 };
 
 console.log(humanYearsCatYearsDogYears(5)); // [2,24,24]
+*/
+//Student's Final Grade
+
+function finalGrade(exam, projects) {
+  if (exam > 90 || projects > 10) {
+    return 100;
+  } else if (exam > 75 && projects >= 5) {
+    return 90;
+  } else if (exam > 50 && projects >= 2) {
+    return 75;
+  } else {
+    return 0;
+  }
+}
+
+console.log(finalGrade(79, 5)); // 90
+
+
