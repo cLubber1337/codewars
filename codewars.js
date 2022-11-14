@@ -435,7 +435,7 @@ var uniqueInOrder = function (iterable) {
 console.log(uniqueInOrder("AAAABBBCCDAABBB")); // ["A", "B", "C", "D", "A", "B"]
 */
 //Summation
-
+/*
 var summation = function (num) {
   let sum = 0;
   for (let i = 0; i < num; i++) {
@@ -445,5 +445,19 @@ var summation = function (num) {
 };
 
 console.log(summation(8)); // 36, 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+*/
 
+var number = function (busStops) {
+  return busStops.reduce((item, [on, off]) => item + on - off, 0);
+};
 
+console.log(
+  number([
+    [3, 0],
+    [9, 1],
+    [4, 10],
+    [12, 2],
+    [6, 1],
+    [7, 10],
+  ])
+); //17
