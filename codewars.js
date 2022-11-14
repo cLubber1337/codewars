@@ -422,6 +422,7 @@ function likes(names) {
 console.log(likes(["Max", "John", "Mark", "Dima", "Soska"]));  
 */
 //Unique In Order
+/*
 var uniqueInOrder = function (iterable) {
   let newIterable = [];
   for (let i = 0; i < iterable.length; i++) {
@@ -432,3 +433,17 @@ var uniqueInOrder = function (iterable) {
   return newIterable;
 };
 console.log(uniqueInOrder("AAAABBBCCDAABBB")); // ["A", "B", "C", "D", "A", "B"]
+*/
+//Summation
+
+var summation = function (num) {
+  let sum = 0;
+  for (let i = 0; i < num; i++) {
+    sum += i + 1;
+  }
+  return sum;
+};
+
+console.log(summation(8)); // 36, 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+
+
