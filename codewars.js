@@ -446,7 +446,7 @@ var summation = function (num) {
 
 console.log(summation(8)); // 36, 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
 */
-
+/*
 var number = function (busStops) {
   return busStops.reduce((item, [on, off]) => item + on - off, 0);
 };
@@ -461,3 +461,27 @@ console.log(
     [7, 10],
   ])
 ); //17
+*/
+//Regex validate PIN code 7 kyu
+/*
+function validatePIN(pin) {
+  function findDot(pin) {
+    return pin.split("").some(function (elem) {
+      if (elem == "." || elem == " " || elem == "\n" || elem == "+") {
+        return true;
+      } else {
+        return false;
+      }
+    });
+  }
+  if (pin >= 0 && pin.length == 4 && findDot(pin) != true) {
+    return true;
+  }
+  if (pin.length == 6 && pin >= 0 && findDot(pin) != true) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(validatePIN("*124"));
+*/
